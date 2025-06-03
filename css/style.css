@@ -1,0 +1,334 @@
+/* Globel */
+* {
+    position: relative;
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+div{
+    unicode-bidi: isolate;
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    list-style: none;
+}
+
+html,body{
+    height: auto;
+    
+}
+/* 背景 */
+.wrapper{
+    height: 100%;
+    background-image: url(../img/wrapper.png);
+}
+/* 上方條 */
+.menu{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #fff; */
+}
+.top_bar{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .07);
+    justify-content: flex-end !important;
+    background-color: #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;/* 保持置頂*/
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+.top_bar .logo{
+    display: flex !important;
+    align-items: center;
+    position: relative;
+
+    height: 50px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.top_bar .logo img{
+    width: 100%;
+}
+
+.top_bar .title{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.top_bar .title h4{
+    font-family: "標楷體"; 
+
+}
+
+.top_bar .function,.top_bar .member-btn{
+    display: flex !important;
+}
+
+.top_bar .position-relative{
+    position: relative;
+}
+
+.desktop-menu{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: zone;
+}
+.desktop-menu a{
+    display: flex;
+    align-items: center;
+    padding:16px 16px;
+    position: relative;
+}
+
+/* 自介區 */
+.desimg{
+    /* border: 1px solid red; */
+    background-color: aqua;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    /* background-image: url(../img/des\ img.jpg); */
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+.desimg .selfdes{
+    text-align: center;
+    font-family: "標楷體"; 
+}
+
+.selfdes{
+    /* border: 2px solid black; */
+    position: relative;
+    z-index: 1;
+    height: 600px;
+}
+
+.destext{
+    display: block;
+    top: 40%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-family: cursive;
+}
+
+.des{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+/* V皮進化歷程 */
+.skin_version{
+    background-color: lightgray;
+}
+
+
+div.abc{
+    width: 300px;
+    
+}
+.skintitle{
+    display: block;
+    text-align: center;
+}
+div.skinimg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+img.c{
+    display: flex;
+    width: 100%;
+}
+
+
+img.version2{
+    width: 100%;
+}
+div.version_text{
+    display: flex;
+    justify-content: space-around;
+}
+
+div.texta{
+    text-align: center;
+    width: 300px;
+}
+
+b.text{
+    font-family: cursive;
+    font-size: 24px;
+    color: deeppink;
+}
+
+/* 我的商品 */
+.selfproduct{
+    background-color: greenyellow;
+    height: 300px;
+}
+
+.selfproduct .producttitle,.selfproduct .productdes{
+    font-family: "標楷體"; 
+    text-align: center;
+
+}
+
+.product1_img,.product2_img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 10%;
+}
+.product1,.product2{
+    width: 100%;
+}
+.product1_info,.product2_info{
+    display: inline-block;
+    vertical-align: top;
+}
+.product1_info a,.product2_info a{
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: cursive;
+    color: #fff;
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: fuchsia;
+    background: linear-gradient(90deg,rgba(255, 0, 255, 1) 0%, rgba(230, 124, 230, 1) 50%, rgba(191, 61, 191, 1) 100%);
+}
+
+/* 下方條 */
+.bottom_bar{
+    height: 50%;
+    /* background-color: limegreen; */
+}
+
+.bottom_bar .href-bar{
+    height: 100%;
+    background-color: rgba(148,0,211,0.3 );
+    display: flex;
+}
+
+.href-bar .href-img{
+    display: inline-block;
+    width: 200px;
+    margin-right: auto;
+}
+div.bottomimg{
+    width: 70px;
+}
+.bottomimg img{
+    width: 100%;
+}
+.xicon,.dcicon,.yticon {
+    width: 100%;
+}
+.x,.discord,.youtube{
+    width: 100%;
+}
+.img_href{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.href-bar .href-btn{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-around;
+    width: 900px ;
+}
+.row1,.row2,.row3,.row4,.row5{
+    text-align: center;
+    text-decoration: none;
+}
+.title1,.title2,.title3,.title4,.title5{
+    display: block;
+    font-family: 標楷體;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.row1 ul a,.row2 ul a,.row3 ul a,.row4 ul a,.row5 ul a{
+    text-decoration: none;
+    color: #333;
+}
+
+.row1 li,.row2 li,.row3 li,.row4 li,.row5 li{
+    margin-top: 10px;
+}
+.row1 li a,.row2 li a,.row3 li a,.row4 li a,.row5 li a{
+    font-family: 標楷體;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+
+}
+/* 整體圓角化 */
+.bottom_bar,.selfproduct,.skin_version,.desimg,.top_bar,.des{
+    border-radius: 3px;
+}
+
+/* 按鈕更改背景樣式 */
+ul { /* 取消ul預設的內縮及樣式 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.desktop-menu {
+    border: #ccc 1px solid;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+ul.desktop-menu li {
+    position: relative;
+    white-space: nowrap;
+    border-right: #ccc 1px solid;
+}
+/* 滑鼠指向顏色變化 */
+ul.desktop-menu a:hover{
+    background-color:firebrick;
+    color: #fff;
+}
+/* 按鈕背景色 */
+ul.desktop-menu a {
+    background-color: #fff;
+    color: #333;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 47px;
+}
+
+
+/* 
+   position: relative 
+   position: absolute
+   position: sticky
+*/
