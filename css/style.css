@@ -45,7 +45,7 @@ html,body{
     background-color: #ccc;
     margin-left: auto;
     margin-right: auto;
-    position: fixed;/* 保持置頂*/
+    position: sticky;/* 保持置頂*/
     top: 0;
     overflow: hidden;
     z-index: 2;
